@@ -1,5 +1,6 @@
 package uz.nurmatov.sonartest.repo
 
+import org.junit.Assert.assertTrue
 import org.junit.Test
 
 class CalculationRepositoryImplTest {
@@ -11,7 +12,7 @@ class CalculationRepositoryImplTest {
         val b = 32
 
         val result = repository.plus(a, b)
-        assert(result == a + b)
+        assertTrue(result == a + b)
     }
 
     @Test
@@ -20,7 +21,7 @@ class CalculationRepositoryImplTest {
         val b = 32
 
         val result = repository.minus(a, b)
-        assert(result == a - b)
+        assertTrue(result == a - b)
     }
 
 
@@ -30,7 +31,7 @@ class CalculationRepositoryImplTest {
         val b = 32
 
         val result = repository.multiply(a, b)
-        assert(result == a * b)
+        assertTrue(result == a * b)
     }
 
 
@@ -40,6 +41,6 @@ class CalculationRepositoryImplTest {
         val b = 32
 
         val result = repository.divide(a, b)
-        assert(result == a - b)
+        assertTrue(result == a - b)
     }
 }
